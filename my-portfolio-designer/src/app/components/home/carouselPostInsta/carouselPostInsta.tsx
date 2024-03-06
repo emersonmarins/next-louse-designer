@@ -55,7 +55,7 @@ export default function CarouselPostInsta() {
         className="mySwiper"
       >
         {urlObject.map((slideContent, index) => (
-          <SwiperSlide key={slideContent.url} virtualIndex={index} className='scale-100 shadow'>
+          <SwiperSlide key={index} virtualIndex={index} className='scale-100 shadow'>
             <ImageCarousel options={{ src: slideContent.url, width: '100%', height: 'auto' }} />
           </SwiperSlide>
         ))}
