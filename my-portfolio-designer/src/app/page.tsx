@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Header from "./components/header";
-import CarouselPostInsta from "./home/components/carouselPostInsta";
+import CarouselPostInsta from "./home/components/carouselPostInsta/carouselPostInsta";
 
 export default function Home() {
   return (
