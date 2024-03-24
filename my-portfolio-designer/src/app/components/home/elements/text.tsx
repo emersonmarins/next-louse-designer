@@ -1,18 +1,21 @@
-export default function Text(options: object | any) {
+import { cn } from "../../lib/utils";
+
+
+export default function Text({className, options}:any) {
   
   const styles = {
-    fontSize: options.options.fontSize ? options.options.fontSize+'rem' : '0.875rem',
-    fontFamily: options.options.fontFamily ? 'Arial, Helvetica, sans-serif' : 'Ubuntu, sans-serif',
-    color: options.options.color ? options.options.color : 'rgb(118, 118, 118)',
-    textTransform: options.options.textTransform ? options.options.textTransform : 'capitalize',
-    fontWeight: options.options.fontWeight ? options.options.fontWeight : '400',
+    fontSize: options.fontSize ? options.fontSize+'rem' : '0.875rem',
+    fontFamily: options.fontFamily ? 'Arial, Helvetica, sans-serif' : 'Ubuntu, sans-serif',
+    color: options.color ? options.color : 'rgb(118, 118, 118)',
+    textTransform: options.textTransform ? options.textTransform : 'capitalize',
+    fontWeight: options.fontWeight ? options.fontWeight : '400',
 
   }
-  switch (options.options.tag) {
+  switch (options.tag) {
     case "p":
-      return <p className="text-sm font-ubuntu font-light text-zinc-400 opacity-0 animate-showElement max-w-[600px] max-project-lg:max-w-[400px]" style={styles}>{options.options.text}</p>
+      return <p className={cn("text-sm font-ubuntu font-light text-zinc-400 opacity-0 animate-showElement max-w-[600px] max-project-lg:max-w-[400px]", className)} style={styles}>{options.text}</p>
     case "span":
-      return <span className="text-sm font-ubuntu font-light text-zinc-400 opacity-0 animate-showElement max-w-[600px] max-project-lg:max-w-[400px]" style={styles}>{options.options.text}</span>
+      return <span className={cn("text-sm font-ubuntu font-light text-zinc-400 opacity-0 animate-showElement max-w-[600px] max-project-lg:max-w-[400px]", className)} style={styles}>{options.text}</span>
     default:
       break;
   }

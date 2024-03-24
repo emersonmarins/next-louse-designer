@@ -11,8 +11,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+  --colortest: #87dd31;
+  --background-card-design: linear-gradient(45deg, #272727, #131313, #272727);
+  --background-card-essenc: linear-gradient(45deg, #669d00, #87dd31, #669d00);
+  --background-card-advance: linear-gradient(45deg, #00599d, #31b5dd, #00599d);
+  --background-card-premium: linear-gradient(45deg, #7a7203, #bcb121, #7a7203);
 
+}
+/* sizes */
+:root {
+  --step-3: clamp(1.2rem, -0.234rem + 4.5889vw, 2.7rem);
+  --step-4: clamp(1.5rem, 0.066rem + 4.5889vw, 3rem);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

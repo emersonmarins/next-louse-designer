@@ -17,6 +17,9 @@ const config: Config = {
 
         'xl': { 'max': '1279px' },
         // => @media (max-width: 1279px) { ... }
+        
+        '2lg': { 'max': '1123px' },
+        // => @media (max-width: 1123px) { ... }
 
         'lg': { 'max': '1023px' },
         // => @media (max-width: 1023px) { ... }
@@ -48,6 +51,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-linear": "linear-gradient(270deg, var(--e-global-color-primary) 0%, var(--e-global-color-secondary) 100%)",
+        "gradient-card-design": "var(--background-card-design)",
+        "gradient-card-essenc": "var(--background-card-essenc)",
+        "gradient-card-advance": "var(--background-card-advance)",
+        "gradient-card-premium": "var(--background-card-premium)",
       },
       fontFamily: {
         quicksand: ['Quicksand', "sans-serif"],
