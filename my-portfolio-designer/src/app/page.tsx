@@ -1,8 +1,10 @@
-import Card from "./components/home/card/card";
-import Footer from "./components/home/footer/Footer";
-import Header from "./components/home/header/header";
-import Presentation from "./components/home/presentation/presentation";
-import ContentPostInsta from "./components/home/textCarouselPostInsta/textCarouselPostInsta";
+// SPDX-License-Identifier: MIT
+
+import Card from "../components/card/card";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/header";
+import Presentation from "../components/presentation/presentation";
+import ContentPostInsta from "@/components/textCarouselPostInsta/textCarouselPostInsta";
 import Image from "next/image";
 import Plan01 from "/public/planos01.png"
 import Plan02 from "/public/planos02.png"
@@ -73,8 +75,9 @@ const packageCards = [
 ]
 export default function Home() {
   return (
+
     <div className="m-auto">
-      <Header />
+
       <div className="mt-40 max-lg:mt-48 max-sm:mt-36"></div>
       <Presentation />
       <ContentPostInsta />
@@ -130,7 +133,7 @@ export default function Home() {
           }
         </div>
       </div>
-      <Footer />
+
     </div>
   )
 }

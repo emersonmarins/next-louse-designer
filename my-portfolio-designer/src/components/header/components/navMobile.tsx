@@ -10,7 +10,7 @@ export default function NavMobile() {
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
-  const styleContainer = 'sm:flex sm:flex-col sm:items-center absolute sm:top-0 sm:right-0 sm:pt-24 sm:h-[auto] sm:w-[250px] z-20 ';
+  const styleContainer = 'max-sm:flex max-sm:flex-col max-sm:items-center absolute max-sm:top-0 max-sm:right-0 max-sm:pt-24 max-sm:h-[auto] max-sm:w-[250px] z-20 ';
   const styleContainer02 = "before:content-[''] before:absolute before:bg-[linear-gradient(180deg,_#575757,_#171717)] before:top-0 before:h-[450px] before:w-[250px] before:z-10 ";
   const resulSumStyles = styleContainer + styleContainer02;
   const addHidden = ' before:right-[-100%]';
@@ -22,9 +22,9 @@ export default function NavMobile() {
       {/**Menu Hamburguer*/}
       <div
         onClick={handleMenuToggle}
-        className="w-8 h-[1.6rem] sm:absolute sm:top-12 sm:right-2 sm:z-10 sm:flex cursor-pointer"
+        className="w-8 h-[1.6rem] max-sm:absolute max-sm:top-12 max-sm:right-2 max-sm:z-10 max-sm:flex cursor-pointer"
       >
-        <div className="hidden sm:flex sm:flex-col sm:justify-between sm:w-6 sm:h-[1.4rem]">
+        <div className="hidden max-sm:flex max-sm:flex-col max-sm:justify-between max-sm:w-6 max-sm:h-[1.4rem]">
           <div className={`${menuOpen ? 'h-[1px] w-full bg-zinc-200 rotate-45 translate-y-[.65rem]' : 'h-[2px] w-full bg-zinc-900'} `} style={transitionStyle}></div>
           <div className={`${menuOpen ? 'h-[1px] w-full bg-zinc-200 opacity-0' : 'h-[2px] w-full bg-zinc-900'} `} style={transitionStyle}></div>
           <div className={`${menuOpen ? 'h-[1px] w-full bg-zinc-200 -rotate-45 translate-y-[-.65rem]' : 'h-[2px] w-full bg-zinc-900'} `} style={transitionStyle}></div>
